@@ -80,8 +80,6 @@ Wire Wire Line
 Wire Wire Line
 	5900 2150 5900 2000
 Connection ~ 5800 2150
-Text Notes 5400 1200 0    50   ~ 0
-Uninstall after programming\n\n!3.3v only! UART mapping:\nD+   TXD\nD-    RXD
 Text HLabel 6650 3000 2    50   Input ~ 0
 TXD
 Text HLabel 6650 2900 2    50   Input ~ 0
@@ -115,7 +113,7 @@ AR Path="/6214127D" Ref="J?"  Part="1"
 AR Path="/61F95051/6214127D" Ref="J1"  Part="1" 
 F 0 "J1" H 3808 4181 50  0000 C CNN
 F 1 "Battery Connector" H 3808 4090 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3700 4000 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 3700 4000 50  0001 C CNN
 F 3 "~" H 3700 4000 50  0001 C CNN
 	1    3700 4000
 	1    0    0    -1  
@@ -143,9 +141,9 @@ U 1 1 6216F998
 P 4000 4800
 AR Path="/6216F998" Ref="SW?"  Part="1" 
 AR Path="/61F95051/6216F998" Ref="SW1"  Part="1" 
-F 0 "SW1" H 4000 5067 50  0000 C CNN
-F 1 "SW_DIP_x01" H 4000 4976 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4000 4800 50  0001 C CNN
+F 0 "SW1" V 4050 5100 50  0000 C CNN
+F 1 "Power Switch" V 3900 5200 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 4000 4800 50  0001 C CNN
 F 3 "~" H 4000 4800 50  0001 C CNN
 	1    4000 4800
 	0    -1   -1   0   
@@ -178,7 +176,7 @@ AR Path="/6217A931" Ref="J?"  Part="1"
 AR Path="/61F95051/6217A931" Ref="J3"  Part="1" 
 F 0 "J3" H 4028 5876 50  0000 L CNN
 F 1 "Peltier Connection" H 4028 5785 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4000 5900 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 4000 5900 50  0001 C CNN
 F 3 "~" H 4000 5900 50  0001 C CNN
 	1    4000 5900
 	-1   0    0    1   
@@ -205,9 +203,9 @@ U 1 1 622E4833
 P 6150 3000
 AR Path="/622E4833" Ref="J?"  Part="1" 
 AR Path="/61F95051/622E4833" Ref="J4"  Part="1" 
-F 0 "J4" H 6178 2976 50  0000 L CNN
-F 1 "Serial" H 6178 2885 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6150 3000 50  0001 C CNN
+F 0 "J4" H 6000 3050 50  0000 L CNN
+F 1 "Serial" H 5900 2950 50  0000 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 6150 3000 50  0001 C CNN
 F 3 "~" H 6150 3000 50  0001 C CNN
 	1    6150 3000
 	1    0    0    -1  
