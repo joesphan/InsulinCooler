@@ -113,7 +113,7 @@ AR Path="/6214127D" Ref="J?"  Part="1"
 AR Path="/61F95051/6214127D" Ref="J1"  Part="1" 
 F 0 "J1" H 3808 4181 50  0000 C CNN
 F 1 "Battery Connector" H 3808 4090 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3700 4000 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 3700 4000 50  0001 C CNN
 F 3 "~" H 3700 4000 50  0001 C CNN
 	1    3700 4000
 	1    0    0    -1  
@@ -143,7 +143,7 @@ AR Path="/6216F998" Ref="SW?"  Part="1"
 AR Path="/61F95051/6216F998" Ref="SW1"  Part="1" 
 F 0 "SW1" V 4050 5100 50  0000 C CNN
 F 1 "Power Switch" V 3900 5200 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4000 4800 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 4000 4800 50  0001 C CNN
 F 3 "~" H 4000 4800 50  0001 C CNN
 	1    4000 4800
 	0    -1   -1   0   
@@ -176,7 +176,7 @@ AR Path="/6217A931" Ref="J?"  Part="1"
 AR Path="/61F95051/6217A931" Ref="J3"  Part="1" 
 F 0 "J3" H 4028 5876 50  0000 L CNN
 F 1 "Peltier Connection" H 4028 5785 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4000 5900 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 4000 5900 50  0001 C CNN
 F 3 "~" H 4000 5900 50  0001 C CNN
 	1    4000 5900
 	-1   0    0    1   
