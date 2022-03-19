@@ -4,6 +4,12 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Microcontroller")
+    (date "2022-03-18")
+    (comment 1 "Engineer/Draftsman: Joesphan Lu")
+  )
+
   (lib_symbols
     (symbol "1KicadLib:ESP32-D-WD-V3" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "U" (id 0) (at -5.08 -5.08 0)

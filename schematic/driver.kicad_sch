@@ -4,6 +4,12 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Peltier Driver")
+    (date "2022-03-18")
+    (comment 1 "Engineer/Draftsman: Joesphan Lu")
+  )
+
   (lib_symbols
     (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "C" (id 0) (at 0.635 2.54 0)
@@ -952,7 +958,7 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid a0e7a81b-2259-4f8d-8368-ba75f2004714)
   )
-  (wire (pts (xy 120.65 77.47) (xy 120.65 80.01))
+  (wire (pts (xy 120.65 74.93) (xy 120.65 80.01))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid a2b8fc16-aee1-4254-9a2c-4f21d171f81a)
   )
@@ -1393,6 +1399,22 @@
     )
     (pin "1" (uuid cff1a219-cd40-4362-af76-bb71c1bc94e9))
     (pin "2" (uuid da957933-6555-482c-b9e9-870b7ba47d2d))
+  )
+
+  (symbol (lib_id "power:Vdrive") (at 120.65 74.93 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 56a155f6-67fb-4ed4-abee-b01de92744a0)
+    (property "Reference" "#PWR?" (id 0) (at 125.73 78.74 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "Vdrive" (id 1) (at 120.65 71.3542 0))
+    (property "Footprint" "" (id 2) (at 120.65 74.93 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 120.65 74.93 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 3bc63afd-b322-48ac-ad4f-63efcef06259))
   )
 
   (symbol (lib_id "Device:R") (at 97.79 99.06 270) (unit 1)

@@ -4,6 +4,12 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Power Managment")
+    (date "2022-03-18")
+    (comment 1 "Engineer/Draftsman: Joesphan Lu")
+  )
+
   (lib_symbols
     (symbol "1KicadLib:AS431" (in_bom yes) (on_board yes)
       (property "Reference" "U" (id 0) (at -5.08 -3.81 0)

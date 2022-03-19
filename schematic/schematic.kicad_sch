@@ -4,6 +4,12 @@
 
   (paper "USLetter")
 
+  (title_block
+    (title "Overview")
+    (date "2022-03-18")
+    (comment 1 "Engineer/Draftsman: Joesphan Lu")
+  )
+
   (lib_symbols
     (symbol "power:+3V3" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (id 0) (at 0 -3.81 0)
@@ -972,6 +978,9 @@
     )
     (path "/00000000-0000-0000-0000-000061f58c1a/faafb7ac-aa27-4744-8dd0-b3186a015be9"
       (reference "#PWR0178") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00006200d680/56a155f6-67fb-4ed4-abee-b01de92744a0"
+      (reference "#PWR?") (unit 1) (value "Vdrive") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000061f58c1a/00000000-0000-0000-0000-000062198c67"
       (reference "AE1") (unit 1) (value "Antenna_Chip") (footprint "RF_Antenna:Johanson_2450AT18x100")
