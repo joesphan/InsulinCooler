@@ -1,0 +1,1 @@
+### this folder contains documents pertaining to Western Washington University EECE Senior project requirements
