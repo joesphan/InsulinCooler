@@ -14,7 +14,7 @@
       (property "Reference" "U" (id 0) (at 8.89 -26.67 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "1KicadLib_USB_C_PWR_ONLY" (id 1) (at -3.81 19.05 0)
+      (property "Value" "USB_C_PWR_ONLY" (id 1) (at -3.81 19.05 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (id 2) (at 8.89 -26.67 0)

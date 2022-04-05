@@ -1,11 +1,11 @@
-20117634512647356
+20119295819766227
 1KicadLib
-GatorTestpoint
+DFN_8_3x3mm_EP_1.25x2.7mm
 
 
 0
-2
-1
+0
+0
 1KicadLib
 LFPAK56D
 
@@ -13,6 +13,13 @@ LFPAK56D
 0
 12
 8
+1KicadLib
+SMT_4_8.2x2.54
+
+
+0
+4
+4
 1KicadLib
 USB4125-GF-A
 
