@@ -512,7 +512,7 @@
     (uuid f357ddb5-3f44-43b0-b00d-d64f5c62ba4a)
   )
 
-  (hierarchical_label "PWR_SW_N" (shape input) (at 168.91 100.33 0)
+  (hierarchical_label "VCC_UNREGULATED" (shape input) (at 168.91 100.33 0)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 12a24e86-2c38-4685-bba9-fff8dddb4cb0)
   )

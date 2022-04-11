@@ -44,11 +44,17 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "45_degree_only": false,
+          "45_degree_only": true,
           "min_clearance": 0.25
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -115,6 +121,7 @@
       },
       "track_widths": [
         0.0,
+        0.1524,
         0.25,
         0.5,
         0.75,
@@ -458,6 +465,10 @@
     [
       "00000000-0000-0000-0000-0000622394a9",
       "Temperature Sensors"
+    ],
+    [
+      "985c94ef-2f6b-4326-b324-b3755403a9b7",
+      "GATOR_PORTS"
     ]
   ],
   "text_variables": {}
