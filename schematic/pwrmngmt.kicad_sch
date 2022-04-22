@@ -2525,7 +2525,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 63761c45-939b-468f-bc50-61049d722f85)
   )
-  (text "3.3V Linear, 5V Buck" (at 232.41 113.03 0)
+  (text "3.3V Linear, 5V Linear" (at 232.41 113.03 0)
     (effects (font (size 3 3)) (justify left bottom))
     (uuid 7b1a411b-923c-4add-80da-0788cf7ac0de)
   )
