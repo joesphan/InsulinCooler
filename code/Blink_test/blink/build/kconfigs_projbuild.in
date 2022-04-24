@@ -1,0 +1,5 @@
+source "C:/esp/components/app_update/Kconfig.projbuild"
+source "C:/esp/components/bootloader/Kconfig.projbuild"
+source "C:/esp/components/esptool_py/Kconfig.projbuild"
+source "C:/esp/components/partition_table/Kconfig.projbuild"
+source "C:/Users/joesp/Documents/GitHub/InsulinCooler/code/Blink_test/blink/main/Kconfig.projbuild"
