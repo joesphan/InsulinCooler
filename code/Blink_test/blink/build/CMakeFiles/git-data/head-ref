@@ -1,1 +1,26 @@
-b3c9d13cf1e94be99bad766013f7d575c37c0c89
+0000000000000000000000000000000000000000 e7bfdc00ca36359468cb4d94560061d51f529ac3 joesphan <joesphanlu@gmail.com> 1643148468 -0800	clone: from https://github.com/joesphan/InsulinCooler.git
+e7bfdc00ca36359468cb4d94560061d51f529ac3 e0acc7000480d0a4110135471b3b2388d1150fb3 joesphan <joesphanlu@gmail.com> 1643156741 -0800	commit: e
+e0acc7000480d0a4110135471b3b2388d1150fb3 961e10b279c573036bb511dcff5f5b9a63a85f3f joesphan <joesphanlu@gmail.com> 1643598086 -0800	commit: schematic done
+961e10b279c573036bb511dcff5f5b9a63a85f3f 8365e9b8a334c3388830c80b27c032f191eff6e4 joesphan <joesphanlu@gmail.com> 1643781609 -0800	commit: nightly
+8365e9b8a334c3388830c80b27c032f191eff6e4 c31f20c18914baa626abc98415a9596312c517aa joesphan <joesphanlu@gmail.com> 1643864232 -0800	commit: pdfs
+c31f20c18914baa626abc98415a9596312c517aa c7198c2e0319db8ee0aaa7ccf5e5fd49199b186f joesphan <joesphanlu@gmail.com> 1643864549 -0800	commit: blob
+c7198c2e0319db8ee0aaa7ccf5e5fd49199b186f ab5fd1a8f9f119796064a0c15f803aada130dac1 joesphan <joesphanlu@gmail.com> 1644904558 -0800	commit: fixed vias
+ab5fd1a8f9f119796064a0c15f803aada130dac1 906b1731717863f63636db524cc403c5f7599268 joesphan <joesphanlu@gmail.com> 1645310799 -0800	commit: gerber push
+906b1731717863f63636db524cc403c5f7599268 693087553a71c257a6db41b4b7e239d671a42826 joesphan <joesphanlu@gmail.com> 1646426620 -0800	commit: updated resistor dividers for more friendly values
+693087553a71c257a6db41b4b7e239d671a42826 50aafdc31d3966fd2834ac5a7d4c2fc5544bacc4 joesphan <joesphanlu@gmail.com> 1646465934 -0800	commit: Create charge pump simulation.cmf
+50aafdc31d3966fd2834ac5a7d4c2fc5544bacc4 853a56741c76844174de7f53054f5970bd91b3e4 joesphan <joesphanlu@gmail.com> 1646558713 -0800	commit: replacing buck converter with higher efficiency one
+853a56741c76844174de7f53054f5970bd91b3e4 4bdfdd1fbafebd476e86dc8595a898b1403a7198 joesphan <joesphanlu@gmail.com> 1646730017 -0800	commit: breakout board for v2 buck and nmos driver
+4bdfdd1fbafebd476e86dc8595a898b1403a7198 08b7bebaaa29b8bbd339257bf3015d0208817c76 joesphan <joesphanlu@gmail.com> 1647679842 -0700	commit: final winter qtr push
+08b7bebaaa29b8bbd339257bf3015d0208817c76 254db3a575eedadb196bf7a5200c83312f48fee1 joesphan <joesphanlu@gmail.com> 1647683747 -0700	commit: a
+254db3a575eedadb196bf7a5200c83312f48fee1 6719e17665e3e3ea5ff971c5f159d016cd02f4cb joesphan <joesphanlu@gmail.com> 1647840770 -0700	commit: E
+6719e17665e3e3ea5ff971c5f159d016cd02f4cb c584e4072f0c12e3a39d4b03a9675f3b8cfff774 joesphan <joesphanlu@gmail.com> 1648621412 -0700	pull --progress origin: Fast-forward
+c584e4072f0c12e3a39d4b03a9675f3b8cfff774 ff22fed7615285627d3c6f3ea34217626eb5a21a joesphan <joesphanlu@gmail.com> 1648696941 -0700	commit: a
+ff22fed7615285627d3c6f3ea34217626eb5a21a aa0134b51e95183eca11e7339d5b7038a713cebd joesphan <joesphanlu@gmail.com> 1648697093 -0700	commit: Create .gitignore
+aa0134b51e95183eca11e7339d5b7038a713cebd 55be71a5aa43bc4c0f547d626f1224fb556629f2 joesphan <joesphanlu@gmail.com> 1648697541 -0700	commit: reorg + course docs
+55be71a5aa43bc4c0f547d626f1224fb556629f2 155547de147968d063367c196c5a510e7f176c46 joesphan <joesphanlu@gmail.com> 1649177143 -0700	commit: e
+155547de147968d063367c196c5a510e7f176c46 75b62fefa9166fa64adcc03c0315da8662686a12 joesphan <joesphanlu@gmail.com> 1649214203 -0700	pull --progress origin: Fast-forward
+75b62fefa9166fa64adcc03c0315da8662686a12 7a8dc925af3b217652fbd2410405082014142734 joesphan <joesphanlu@gmail.com> 1649436586 -0700	commit: d
+7a8dc925af3b217652fbd2410405082014142734 d3df7f0122848b26f328ea6c5aa2cac51e99f954 joesphan <joesphanlu@gmail.com> 1649470326 -0700	pull --progress origin: Fast-forward
+d3df7f0122848b26f328ea6c5aa2cac51e99f954 2feb05ac1928b2a38f30279326a21c25855acbeb joesphan <joesphanlu@gmail.com> 1649667772 -0700	commit: beta boards routed
+2feb05ac1928b2a38f30279326a21c25855acbeb b3c9d13cf1e94be99bad766013f7d575c37c0c89 joesphan <joesphanlu@gmail.com> 1650658698 -0700	commit: prelim ble working
+b3c9d13cf1e94be99bad766013f7d575c37c0c89 e00b488260d8cae17d19aba061ee993928d88d6a joesphan <joesphanlu@gmail.com> 1650790888 -0700	commit: e
