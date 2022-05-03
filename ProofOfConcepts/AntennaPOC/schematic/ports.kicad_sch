@@ -245,7 +245,7 @@
     (uuid f202141e-c20d-4cac-b016-06a44f2ecce8)
   )
 
-  (symbol (lib_id "power:GND") (at 147.32 55.88 0)
+  (symbol (lib_id "power:GND") (at 147.32 55.88 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000062120404)
     (property "Reference" "#PWR0125" (id 0) (at 147.32 62.23 0)
