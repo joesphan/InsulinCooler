@@ -130,7 +130,7 @@ static const uint8_t char_prop_read_write = ESP_GATT_CHAR_PROP_BIT_WRITE_NR|ESP_
 
 ///SPP Service - data receive characteristic, read&write without response
 static const uint16_t spp_data_receive_uuid = ESP_GATT_UUID_SPP_DATA_RECEIVE;
-static const uint8_t  spp_data_receive_val[7] = {'D', 'I', 'C', 'K', 'A', 'S', 'S'};
+static const uint8_t  spp_data_receive_val[35] = {'M', 'o', 'r', 't', ' ', 'l', 'i', 'k', 'e', 's', ' ', 't', 'o', ' ', 'g', 'e', 't', ' ', 'f', 'u', 'c', 'k', 'e', 'd', ' ', 'i', 'n', ' ', 't', 'h', 'e', ' ', 'a', 's', 's'};
 
 
 ///Full HRS Database Description - Used to add attributes into the database

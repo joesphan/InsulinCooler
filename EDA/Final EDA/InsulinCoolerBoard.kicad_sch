@@ -1143,10 +1143,10 @@
       (reference "BT3") (unit 1) (value "Battery_Cell") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-000061f58c1a/00000000-0000-0000-0000-000062198c44"
-      (reference "C1") (unit 1) (value "3.797pF") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
+      (reference "C1") (unit 1) (value "3.797pF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-000061f58c1a/00000000-0000-0000-0000-000062198c4a"
-      (reference "C2") (unit 1) (value "4.64pF") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
+      (reference "C2") (unit 1) (value "4.64pF") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-000061f58c1a/00000000-0000-0000-0000-000062198c13"
       (reference "C3") (unit 1) (value "3.3nF") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
@@ -1184,9 +1184,6 @@
     (path "/00000000-0000-0000-0000-000061f4c378/09de195f-56ba-44b4-b405-cbb6a75f768b"
       (reference "C14") (unit 1) (value "22uF") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
-    (path "/00000000-0000-0000-0000-000061f4c378/1411d507-03f1-4d3e-afe4-06749e66bd20"
-      (reference "C15") (unit 1) (value "10uF") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
-    )
     (path "/00000000-0000-0000-0000-000061f58c1a/d5d7ac18-dbeb-4d51-98f9-98c396a965f8"
       (reference "C16") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
@@ -1218,7 +1215,7 @@
       (reference "J11") (unit 1) (value "PROG_PORT") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-000061f58c1a/00000000-0000-0000-0000-000062198c50"
-      (reference "L1") (unit 1) (value "1.807nH") (footprint "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
+      (reference "L1") (unit 1) (value "1.807nH") (footprint "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-000061f4c378/f206900d-eb9f-4dc4-b280-fb271cba3e05"
       (reference "L2") (unit 1) (value "3.3uH NRS5024T3R3NMGJ") (footprint "Inductor_SMD:L_Taiyo-Yuden_NR-50xx_HandSoldering")
@@ -1374,13 +1371,13 @@
       (reference "U11") (unit 1) (value "BSD316") (footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000061f4c378/c57090b6-2e34-4a83-8222-6a716c33706d"
-      (reference "U12") (unit 1) (value "PC817") (footprint "Package_DIP:DIP-4_W7.62mm")
+      (reference "U12") (unit 1) (value "PC817") (footprint "Package_DIP:DIP-4_W8.89mm_SMDSocket_LongPads")
     )
     (path "/00000000-0000-0000-0000-000061f4c378/275883f0-83a9-486f-80bc-9817cc1b2730"
-      (reference "U13") (unit 1) (value "PC817") (footprint "Package_DIP:DIP-4_W7.62mm")
+      (reference "U13") (unit 1) (value "PC817") (footprint "Package_DIP:DIP-4_W8.89mm_SMDSocket_LongPads")
     )
     (path "/00000000-0000-0000-0000-000061f4c378/a50bb504-2580-48b9-97ea-4b2908a9fd06"
-      (reference "U14") (unit 1) (value "PC817") (footprint "Package_DIP:DIP-4_W7.62mm")
+      (reference "U14") (unit 1) (value "PC817") (footprint "Package_DIP:DIP-4_W8.89mm_SMDSocket_LongPads")
     )
     (path "/00000000-0000-0000-0000-000061f4c378/32eacde1-446e-43f2-a4e0-0ee47172d065"
       (reference "U15") (unit 1) (value "AS431") (footprint "Package_TO_SOT_SMD:SOT-23-5_HandSoldering")
