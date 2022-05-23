@@ -2035,7 +2035,7 @@
   )
   (hierarchical_label "PWR_UNREG" (shape input) (at 156.21 34.29 180)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 453698e7-5a22-4c0c-9f89-8d06554839a9)
+    (uuid 453698e7-5a22-4c0c-9f89-8d06554839aa)
   )
   (hierarchical_label "CELL_2_DSCHG" (shape input) (at 86.36 96.52 0)
     (effects (font (size 1.27 1.27)) (justify left))

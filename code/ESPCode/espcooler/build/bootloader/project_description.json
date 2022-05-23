@@ -1,0 +1,20 @@
+{
+    "project_name":       "bootloader",
+    "project_path":       "C:/esp/components/bootloader/subproject",
+    "build_dir":          "C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESPCode/espcooler/build/bootloader",
+    "config_file":        "C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESPCode/espcooler/sdkconfig",
+    "config_defaults":    "",
+    "app_elf":            "bootloader.elf",
+    "app_bin":            "bootloader.bin",
+    "git_revision":       "v4.3.2",
+    "target":             "esp32",
+    "phy_data_partition": "",
+    "monitor_baud" :      "115200",
+    "monitor_toolprefix": "xtensa-esp32-elf-",
+    "config_environment" : {
+        "COMPONENT_KCONFIGS" : "C:/esp/components/efuse/Kconfig;C:/esp/components/esp32/Kconfig;C:/esp/components/esp_common/Kconfig;C:/esp/components/esp_system/Kconfig;C:/esp/components/log/Kconfig;C:/esp/components/newlib/Kconfig;C:/esp/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "C:/esp/components/bootloader/Kconfig.projbuild;C:/esp/components/esptool_py/Kconfig.projbuild;C:/esp/components/partition_table/Kconfig.projbuild"
+    },
+    "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp32", "esp_common", "esp_hw_support", "esp_rom", "esp_system", "esptool_py", "hal", "log", "main", "micro-ecc", "newlib", "partition_table", "soc", "spi_flash", "xtensa", "" ],
+    "build_component_paths" : [ "C:/esp/components/bootloader", "C:/esp/components/bootloader_support", "C:/esp/components/efuse", "C:/esp/components/esp32", "C:/esp/components/esp_common", "C:/esp/components/esp_hw_support", "C:/esp/components/esp_rom", "C:/esp/components/esp_system", "C:/esp/components/esptool_py", "C:/esp/components/hal", "C:/esp/components/log", "C:/esp/components/bootloader/subproject/main", "C:/esp/components/bootloader/subproject/components/micro-ecc", "C:/esp/components/newlib", "C:/esp/components/partition_table", "C:/esp/components/soc", "C:/esp/components/spi_flash", "C:/esp/components/xtensa", "" ]
+}

@@ -628,7 +628,7 @@
   (symbol (lib_id "1KicadPowerLib:PWR_UNREG") (at 81.28 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 7dabade2-264a-4950-afa7-54bc1695fb9e)
-    (property "Reference" "#PWR_UNREG?" (id 0) (at 76.835 56.515 0)
+    (property "Reference" "#PWR_UNREG0101" (id 0) (at 76.835 56.515 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_UNREG" (id 1) (at 81.28 53.498 0))
@@ -1154,11 +1154,11 @@
     (path "/00000000-0000-0000-0000-000061f4c378/f1620bd0-127d-41a4-a7ad-b74a625d7ae0"
       (reference "#PWR0180") (unit 1) (value "GND") (footprint "")
     )
+    (path "/7dabade2-264a-4950-afa7-54bc1695fb9e"
+      (reference "#PWR_UNREG0101") (unit 1) (value "PWR_UNREG") (footprint "")
+    )
     (path "/458a67b4-ece1-4067-9278-7dd6eab7a37d"
       (reference "#PWR_UNREG0104") (unit 1) (value "PWR_UNREG") (footprint "")
-    )
-    (path "/7dabade2-264a-4950-afa7-54bc1695fb9e"
-      (reference "#PWR_UNREG?") (unit 1) (value "PWR_UNREG") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000061f58c1a/00000000-0000-0000-0000-000062198c67"
       (reference "AE1") (unit 1) (value "Antenna_Chip") (footprint "RF_Antenna:Johanson_2450AT18x100")
@@ -1236,13 +1236,13 @@
       (reference "J2") (unit 1) (value "USB_C_Receptacle_USB2.0") (footprint "1KicadLib:USB4125-GF-A")
     )
     (path "/00000000-0000-0000-0000-000061f58c1a/17bfdc9f-7763-43a5-b6d9-a7248057fa70"
-      (reference "J4") (unit 1) (value "PROG_PORT") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+      (reference "J4") (unit 1) (value "PROG_PORT") (footprint "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-000061f58c1a/c8a010a9-30ba-487a-8238-6083e6198172"
-      (reference "J9") (unit 1) (value "PROG_PORT") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+      (reference "J9") (unit 1) (value "PROG_PORT") (footprint "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-000061f58c1a/70b0d360-eab8-4bd8-9c48-9c6fe2ac06d9"
-      (reference "J11") (unit 1) (value "PROG_PORT") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+      (reference "J11") (unit 1) (value "PROG_PORT") (footprint "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-000061f58c1a/00000000-0000-0000-0000-000062198c50"
       (reference "L1") (unit 1) (value "1.807nH") (footprint "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
@@ -1347,16 +1347,16 @@
       (reference "R40") (unit 1) (value "100k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-000061f95051/00000000-0000-0000-0000-00006216f998"
-      (reference "SW1") (unit 1) (value "Power Switch") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+      (reference "SW1") (unit 1) (value "Power Switch") (footprint "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-0000622394a9/00000000-0000-0000-0000-00006223aa60"
-      (reference "TH1") (unit 1) (value "SDNT2012X103F3950FTF") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+      (reference "TH1") (unit 1) (value "SDNT2012X103F3950FTF") (footprint "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-0000622394a9/00000000-0000-0000-0000-000062240e0b"
-      (reference "TH2") (unit 1) (value "SDNT2012X103F3950FTF") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+      (reference "TH2") (unit 1) (value "SDNT2012X103F3950FTF") (footprint "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-0000622394a9/00000000-0000-0000-0000-00006224584c"
-      (reference "TH3") (unit 1) (value "SDNT2012X103F3950FTF") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
+      (reference "TH3") (unit 1) (value "SDNT2012X103F3950FTF") (footprint "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-000061f58c1a/00000000-0000-0000-0000-000062198b80"
       (reference "U1") (unit 1) (value "ESP32-D-WD-V3") (footprint "Package_DFN_QFN:QFN-48-1EP_5x5mm_P0.35mm_EP3.7x3.7mm")
