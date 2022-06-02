@@ -11,27 +11,42 @@
  * call at startup
  * 
  *************************************************************************/
-void adcInit(void);
+void adcInit(int8_t PRIORITY);
 
 /**********************************************************************
  * ADC data struct
  * used to store ADC voltages
  * ready flag indicates data is ready to be read; set to false after read
  *********************************************************************/
-typedef struct {
-    bool ready;
-    uint32_t data_1;
-    uint32_t data_2;
-    uint32_t data_3;
-} ADC_DATA;
+struct ADC_DATA{
+    float data[3];
+};
+
+
+
+/**********************************************************
+ * readBatteryADC
+ * reads and loads ADC values into memory
+ * used by the task, as well as callable to get immediate ADC values
+ *********************************************************/
+struct ADC_DATA readBatteryADC();
+
+/**********************************************************
+ * readTemperatureADC
+ * reads and loads ADC values into memory
+ * used by the task, as well as callable to get immediate ADC values
+ *********************************************************/
+float readTemperatureADC();
+
+
 
 
 /**********************************************************************
  * ADC current data get
  * returns ADC_DATA data structure
  *********************************************************************/
-ADC_DATA get_cell_data();
-ADC_DATA get_temperature_data();
+struct ADC_DATA get_battery_adc_data();
+struct ADC_DATA get_thermistor_adc_data();
 
 
 /*********************************************************************
@@ -39,5 +54,7 @@ ADC_DATA get_temperature_data();
  * returns the ready potion of the adc data
  * 
  ********************************************************************/
-bool temperature_data_ready();
-bool batt_data_ready();
+uint8_t thermistor_adc_data_ready();
+uint8_t battery_adc_data_ready();
+
+#endif

@@ -115,7 +115,7 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=OFF
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/gatt_server_demos
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/espcooler
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/Users/joesp/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ld.exe
@@ -159,7 +159,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=gatt_server_demos
+CMAKE_PROJECT_NAME:STATIC=espcooler
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/Users/joesp/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-ranlib.exe
@@ -494,10 +494,10 @@ esp-idf_BINARY_DIR:STATIC=C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESP
 esp-idf_SOURCE_DIR:STATIC=C:/esp
 
 //Value Computed by CMake
-gatt_server_demos_BINARY_DIR:STATIC=C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESPCode/espcooler/build
+espcooler_BINARY_DIR:STATIC=C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESPCode/espcooler/build
 
 //Value Computed by CMake
-gatt_server_demos_SOURCE_DIR:STATIC=C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESPCode/espcooler
+espcooler_SOURCE_DIR:STATIC=C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESPCode/espcooler
 
 //Value Computed by CMake
 mbed TLS_BINARY_DIR:STATIC=C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESPCode/espcooler/build/esp-idf/mbedtls/mbedtls

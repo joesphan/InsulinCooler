@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/joesp/Documents/GitHub/InsulinCooler/code/Blink_test/blink/main
+# Install script for directory: C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESPCode/TestCode/Blink_test/blink/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

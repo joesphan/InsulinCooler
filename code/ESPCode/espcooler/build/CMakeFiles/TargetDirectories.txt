@@ -8,7 +8,7 @@ C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESPCode/espcooler/build/CMake
 C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESPCode/espcooler/build/CMakeFiles/monitor.dir
 C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESPCode/espcooler/build/CMakeFiles/encrypted-flash.dir
 C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESPCode/espcooler/build/CMakeFiles/_project_elf_src.dir
-C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESPCode/espcooler/build/CMakeFiles/gatt_server_demos.elf.dir
+C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESPCode/espcooler/build/CMakeFiles/espcooler.elf.dir
 C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESPCode/espcooler/build/CMakeFiles/size.dir
 C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESPCode/espcooler/build/CMakeFiles/size-files.dir
 C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESPCode/espcooler/build/CMakeFiles/size-components.dir

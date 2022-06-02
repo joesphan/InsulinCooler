@@ -34,8 +34,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/joesp/Documents/GitHub/InsulinCooler/code/Blink_test/blink/build/esp-idf/mbedtls/mbedtls/library/cmake_install.cmake")
-  include("C:/Users/joesp/Documents/GitHub/InsulinCooler/code/Blink_test/blink/build/esp-idf/mbedtls/mbedtls/include/cmake_install.cmake")
+  include("C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESPCode/TestCode/Blink_test/blink/build/esp-idf/mbedtls/mbedtls/library/cmake_install.cmake")
+  include("C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESPCode/TestCode/Blink_test/blink/build/esp-idf/mbedtls/mbedtls/include/cmake_install.cmake")
 
 endif()
 

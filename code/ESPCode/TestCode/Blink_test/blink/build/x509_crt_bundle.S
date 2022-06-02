@@ -1,4 +1,4 @@
-/* * Data converted from C:/Users/joesp/Documents/GitHub/InsulinCooler/code/Blink_test/blink/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESPCode/TestCode/Blink_test/blink/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

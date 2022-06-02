@@ -1,69 +1,64 @@
+
+#include "stdlib.h"
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+
 #include "datalog.h"
-#include "adc.h"
+#include "temperature_controller.h"
 //log of temperature and battery
+struct LOG_STR data_log;
+/*
+data_log = {
+    .data_ready = 0,
+    .curpos = 0,
+    .temperature = {-128},
+    .batt = -1
+    };
+*/
 
-static LOG_STR log;
-
-
-void storeDataPoint(uint8_t temp, uint8_t batt)
+uint8_t data_log_ready()
 {
-    
+    return data_log.data_ready;
 }
 
-void datalogInit()
+struct LOG_STR get_data_log() 
 {
-    xTaskCreate(datalogTask, "datalogTask", 2048, NULL, 2, NULL);
+    return data_log;
 }
+
+
+
+
 
 /*************************************************************************
- * responsible for converting and storing the temperature and battery info
+ * datalogTask
+ * converts and stores the temperature and battery info
  * 
  * 
  *************************************************************************/
 static void datalogTask(void * arg) 
 {
-    ADC_DATA adc_temp_data;
-
-    while(!data_ready())
-    {
-        vTaskDelay(1000 / portTICK_PERIOD_MS);
-        //delay 1ms and check again if data not ready
+    
+    for(;;) {
+        vTaskDelay(30000 / portTICK_PERIOD_MS);
+        data_log.data_ready = 0;
+        //calculate and store avg temperature
+        //celcius
+        data_log.temperature[data_log.curpos] = (int8_t)(get_peltier_temperature() - (float)273.15);
+        if (data_log.curpos < 499)
+        {
+            data_log.curpos = data_log.curpos + 1;
+        }
+        else
+        {
+            data_log.curpos = 0;
+        }
+        data_log.data_ready = 1;
     }
 
-    adc_temp_data = get_adc_data();
-
-    //cell 1 voltage conversions
-    log.cur_batt_1_voltage = adc_convert(adc_temp_data.CELL_MEAS_1_RAW);
-
-    //cell 2 voltage conversions
-    log.cur_batt_2_voltage = adc_convert(adc_temp_data.CELL_MEAS_2_RAW);
-
-    //cell 3 voltage conversions
-    log.cur_batt_3_voltage = adc_convert(adc_temp_data.CELL_MEAS_3_RAW);
-
-    //Temp Sensor 1 Conversions
-    log.cur_temp_1 = adc_convert(adc_temp_data.TEMP_SENSE_1_RAW);
-
-    //Temp Sensor 2 Conversions
-    log.cur_temp_2 = adc_convert(adc_temp_data.TEMP_SENSE_2_RAW);
-    
-    //Temp Sensor 3 Conversions
-    log.cur_temp_3 = adc_convert(adc_temp_data.TEMP_SENSE_3_RAW);
-    
-    //calculate and store avg temperature
-    log.temperature[log.curpos] = (log.cur_temp_1 + log.cur_temp_2 + log.cur_temp_3) / 3.00;
-
-    //calculate and store battery percentage
-    log.batt[log.curpos] = 
-
-
 }
 
-void getCurTemperature() 
+void datalogInit(int8_t PRIORITY)
 {
-
-}
-void getCurBatt() 
-{
-
+    xTaskCreate(datalogTask, "datalogTask", 2048, NULL, PRIORITY, NULL);
 }

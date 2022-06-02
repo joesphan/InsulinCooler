@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/joesp/Documents/GitHub/InsulinCooler/code/Blink_test/blink
+# Install script for directory: C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESPCode/TestCode/Blink_test/blink
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/joesp/Documents/GitHub/InsulinCooler/code/Blink_test/blink/build/esp-idf/cmake_install.cmake")
+  include("C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESPCode/TestCode/Blink_test/blink/build/esp-idf/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/joesp/Documents/GitHub/InsulinCooler/code/Blink_test/blink/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/joesp/Documents/GitHub/InsulinCooler/code/ESPCode/TestCode/Blink_test/blink/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
