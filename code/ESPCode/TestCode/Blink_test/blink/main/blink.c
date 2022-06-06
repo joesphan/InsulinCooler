@@ -15,7 +15,7 @@
 /* Can use project configuration menu (idf.py menuconfig) to choose the GPIO to blink,
    or you can edit the following line and set a number here.
 */
-#define led 4
+#define led 22
 
 void app_main(void)
 {
@@ -25,8 +25,8 @@ void app_main(void)
 
     while(1) {
         gpio_set_level(led, 0);
-        vTaskDelay(1000 / portTICK_PERIOD_MS);
+        vTaskDelay(5000 / portTICK_PERIOD_MS);
         gpio_set_level(led, 1);
-        vTaskDelay(1000 / portTICK_PERIOD_MS);
+        vTaskDelay(5000 / portTICK_PERIOD_MS);
     }
 }

@@ -10,7 +10,6 @@ struct LOG_STR{
     uint8_t data_ready;
     uint16_t curpos;
     int8_t temperature[500];
-    int8_t batt;
 };
 
 

@@ -12,6 +12,12 @@
 #define MIN_TEMPERATURE (273.15 + 3)
 #define MID_TEMPERATURE ((((float)MAX_TEMPERATURE - (float)MIN_TEMPERATURE) / 2.00) + (float)MIN_TEMPERATURE)
 
+
+//pwm cycles. duty cycle = 1/PELTIER_PWM * 100 %
+#define PELTIER_PWM 3
+//calcs
+#define PELTIER_PWM_COUNT (uint8_t)PELTIER_PWM
+
 #define KELVIN 273.15
 //beta value for ntc resistor
 #define NTC_B 3950

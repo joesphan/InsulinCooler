@@ -70,7 +70,7 @@ struct ADC_DATA readBatteryADC()
         adc_reading += raw;
     }
     adc_reading = adc_reading / NO_OF_SAMPLES;
-    battery_adc_data.data[3] = (float)esp_adc_cal_raw_to_voltage(adc_reading, &adc_params.adc_chars) / 1000.0;
+    battery_adc_data.data[2] = (float)esp_adc_cal_raw_to_voltage(adc_reading, &adc_params.adc_chars) / 1000.0;
     //ESP_LOGI("readADCTask: ", "battery_adc_data_3: %f\n", battery_adc_data.data_3);
     
     adc_reading = 0;
@@ -81,7 +81,7 @@ struct ADC_DATA readBatteryADC()
         adc_reading += raw;
     }
     adc_reading = adc_reading / NO_OF_SAMPLES;
-    battery_adc_data.data[2] = (float)esp_adc_cal_raw_to_voltage(adc_reading, &adc_params.adc_chars) / 1000.0;
+    battery_adc_data.data[1] = (float)esp_adc_cal_raw_to_voltage(adc_reading, &adc_params.adc_chars) / 1000.0;
     //ESP_LOGI("readADCTask: ", "battery_adc_data_2: %f\n", battery_adc_data.data_2);
 
     adc_reading = 0;
@@ -92,7 +92,7 @@ struct ADC_DATA readBatteryADC()
         adc_reading += raw;
     }
     adc_reading = adc_reading / NO_OF_SAMPLES;
-    battery_adc_data.data[1] = (float)esp_adc_cal_raw_to_voltage(adc_reading, &adc_params.adc_chars) / 1000.0;
+    battery_adc_data.data[0] = (float)esp_adc_cal_raw_to_voltage(adc_reading, &adc_params.adc_chars) / 1000.0;
     //ESP_LOGI("readADCTask: ", "battery_adc_data_1: %f\n", battery_adc_data.data_1);
     return battery_adc_data;
 }

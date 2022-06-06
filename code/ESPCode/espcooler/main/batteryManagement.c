@@ -6,17 +6,45 @@
 #include "adc.h"
 #include "GPIO.h"
 #include "batteryManagement.h"
+struct CUR_BATT_STR {
+    uint8_t ready;
+    uint8_t battery_percentage;
+};
+struct CUR_BATT_STR curbatt;
+
+uint8_t get_battery_level()
+{
+    while(!curbatt.ready)
+    {
+        vTaskDelay(portTICK_PERIOD_MS);
+    }
+    return curbatt.battery_percentage;
+}
+
 
 static void batteryManagementTask(void * arg)
 {
     uint8_t mgmtState = 0;
     for(;;)
     {
+        curbatt.ready = false;
+        //measure and calculate cell voltages
+        struct ADC_DATA adcbuf = readBatteryADC();
+
+        //voltage of a single cell, on average
+#ifdef TWO_CELL
+        float avg_cell_voltage = (adcbuf.data[1] * CELL_2_VOLTIGE_DIV_RATIO) / 2.0;
+#else
+        float avg_cell_voltage = (adcbuf.data[2] * CELL_3_VOLTIGE_DIV_RATIO) / 3.0;
+#endif
+        curbatt.battery_percentage = (uint8_t)(((avg_cell_voltage - MIN_CELL_VOLTAGE) / (MAX_CELL_VOLTAGE-MIN_CELL_VOLTAGE)) * 100.0);
+        curbatt.ready = true;
+
         switch (mgmtState)
         {
             case 0:
                 //idle mode
-                //check every 30s for power detection
+                //check every 30s for power detection and batter level
                 vTaskDelay(30000 / portTICK_PERIOD_MS);
                 write_pin(CELL_1_DISCHG_PIN, LOW);
                 write_pin(CELL_2_DISCHG_PIN, LOW);
@@ -27,7 +55,6 @@ static void batteryManagementTask(void * arg)
                 //active mode
                 //update every 1ms
                 vTaskDelay(portTICK_PERIOD_MS);
-                struct ADC_DATA adcbuf = readBatteryADC();
                 uint8_t maxindex = 0;
                 float maxdiff = 0;     //records largest cell voltage difference
                 //find the cell with the greatest voltage
@@ -59,9 +86,11 @@ static void batteryManagementTask(void * arg)
                             write_pin(CELL_3_DISCHG_PIN, LOW);
                         break;
                         case 2:
+#ifndef TWO_CELL
                             write_pin(CELL_3_DISCHG_PIN, HIGH);
                             write_pin(CELL_1_DISCHG_PIN, LOW);
                             write_pin(CELL_2_DISCHG_PIN, LOW);
+#endif
                         break;
                         default:
                             ESP_LOGE("batteryManagementTask", "maxindex default case entered");

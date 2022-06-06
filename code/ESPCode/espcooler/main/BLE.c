@@ -7,10 +7,13 @@
 #include "esp_gatt_common_api.h"
 #include "esp_log.h"
 #include "freertos/task.h"
-#include <string.h>
+#include "string.h"
+#include "math.h"
 
 #include "BLE.h"
+#include "temperature_controller.h"
 #include "datalog.h"
+#include "batteryManagement.h"
 
 
 static void recv_gatts_event_handler(esp_gatts_cb_event_t event, esp_gatt_if_t gatts_if, esp_ble_gatts_cb_param_t *param);
@@ -43,8 +46,8 @@ static esp_ble_adv_data_t adv_data = {
     .set_scan_rsp = false,
     .include_name = true,
     .include_txpower = false,
-    .min_interval = 0x0006, //slave connection min interval, Time = min_interval * 1.25 msec
-    .max_interval = 0x0010, //slave connection max interval, Time = max_interval * 1.25 msec
+    .min_interval = 0x2500, //slave connection min interval, Time = min_interval * 1.25 msec
+    .max_interval = 0x2700, //slave connection max interval, Time = max_interval * 1.25 msec
     .appearance = 0x00,
     .manufacturer_len = 0, //TEST_MANUFACTURER_DATA_LEN,
     .p_manufacturer_data =  NULL, //&test_manufacturer[0],
@@ -197,15 +200,19 @@ static void recv_gatts_event_handler(esp_gatts_cb_event_t event, esp_gatt_if_t g
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////send temperature and battery data
         struct LOG_STR tempdatalog = get_data_log();
-        rsp.attr_value.len = sizeof(tempdatalog.temperature) + 1 + 1;
-        rsp.attr_value.value[0] = tempdatalog.batt;
-        rsp.attr_value.value[1] = tempdatalog.curpos;
-        for (int16_t i = 2; i < 502; i++)
+        ESP_LOGI(GATTS_TAG, "GATT_READ_EVT, sending data\n");
+        rsp.attr_value.len = sizeof(tempdatalog.temperature) + 4;
+        rsp.attr_value.value[0] = get_battery_level();;
+        rsp.attr_value.value[1] = (int8_t)round(get_peltier_temperature() - (float)273.15);
+        rsp.attr_value.value[2] = (tempdatalog.curpos >> 8) & 0xff;
+        rsp.attr_value.value[3] = tempdatalog.curpos & 0xff;
+        for (uint16_t i = 4; i < 504; i++)
         {
-            rsp.attr_value.value[i] = tempdatalog.temperature[i-2];
+            
+            rsp.attr_value.value[i] = tempdatalog.temperature[i-4];
         }
-        esp_ble_gatts_send_response(gatts_if, param->read.conn_id, param->read.trans_id,
-                                    ESP_GATT_OK, &rsp);
+        esp_ble_gatts_send_response(gatts_if, param->read.conn_id, param->read.trans_id, ESP_GATT_OK, &rsp);
+        ESP_LOGI(GATTS_TAG, "GATT_READ_EVT, send completed\n");
         break;
     }
     case ESP_GATTS_WRITE_EVT: {
@@ -437,7 +444,7 @@ esp_err_t bleInit()
         ESP_LOGE(GATTS_TAG, "gatts app register error, error code = %x", ret);
         return;
     }
-    esp_err_t local_mtu_ret = esp_ble_gatt_set_local_mtu(500);
+    esp_err_t local_mtu_ret = esp_ble_gatt_set_local_mtu(517);
     if (local_mtu_ret){
         ESP_LOGE(GATTS_TAG, "set local  MTU failed, error code = %x", local_mtu_ret);
     }
